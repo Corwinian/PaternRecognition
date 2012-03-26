@@ -215,7 +215,11 @@
          </widget>
         </item>
         <item row="0" column="1">
-         <widget class="QSpinBox" name="leR"/>
+         <widget class="QSpinBox" name="leR">
+          <property name="value">
+           <number>1</number>
+          </property>
+         </widget>
         </item>
         <item row="1" column="0">
          <widget class="QLabel" name="label_9">
@@ -234,7 +238,11 @@
          </widget>
         </item>
         <item row="1" column="1">
-         <widget class="QSpinBox" name="leA"/>
+         <widget class="QSpinBox" name="leA">
+          <property name="value">
+           <number>5</number>
+          </property>
+         </widget>
         </item>
         <item row="2" column="0">
          <widget class="QLabel" name="label_10">
@@ -253,7 +261,11 @@
          </widget>
         </item>
         <item row="2" column="1">
-         <widget class="QSpinBox" name="leB"/>
+         <widget class="QSpinBox" name="leB">
+          <property name="value">
+           <number>6</number>
+          </property>
+         </widget>
         </item>
         <item row="3" column="0">
          <widget class="QLabel" name="label_11">
@@ -272,7 +284,11 @@
          </widget>
         </item>
         <item row="3" column="1">
-         <widget class="QSpinBox" name="leD"/>
+         <widget class="QSpinBox" name="leD">
+          <property name="value">
+           <number>2</number>
+          </property>
+         </widget>
         </item>
        </layout>
       </item>
@@ -305,7 +321,7 @@
          </widget>
         </item>
         <item row="1" column="1">
-         <widget class="QLineEdit" name="elAn">
+         <widget class="QLineEdit" name="leAn">
           <property name="readOnly">
            <bool>true</bool>
           </property>
