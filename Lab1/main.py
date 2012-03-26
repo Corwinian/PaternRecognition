@@ -30,7 +30,7 @@ class MainForm(QtGui.QMainWindow):
         two_pair_count = 0
         three_count = 0
 
-        count = int(self.lExpCount.text())            
+        count = int(self.lExpCount.text())
 
         for i in range(count):
             print (i)
@@ -43,13 +43,13 @@ class MainForm(QtGui.QMainWindow):
 
             for ch in ran_str:
                 if ch not in res.keys():
-                    res[ch] = 1 
+                    res[ch] = 1
                 else:
                     res[ch] += 1
 
             isUniq = True
             isTwoPair = False
-            
+
             for ch in res.values():
                 if ch != 1:
                     isUniq = False
@@ -57,7 +57,7 @@ class MainForm(QtGui.QMainWindow):
                     if isTwoPair:
                         two_pair_count+= 1
                     else:
-                        two_count+=1 
+                        two_count+=1
                     isTwoPair = True
                 elif ch == 3:
                     three_count+=1
@@ -66,7 +66,7 @@ class MainForm(QtGui.QMainWindow):
 
             if isUniq:
                 uniq_count+=1
-        
+
         self.leUniq.setText(str(uniq_count/count))
         self.lePair.setText(str(two_count/count))
         self.leTwoPair.setText(str(two_pair_count/count))
@@ -107,7 +107,7 @@ def main():
     form = MainForm()  # создаёт объект формы
     form.show()  # даёт команду на отображение объекта формы и содержимого
 #    w = QtGui.QWidget()
- 
+
   #  w.resize(320, 240)  # изменить размеры виджета
    # w.setWindowTitle("Hello, World!")  # установить заголовок
     #w.show()  # отобразить окно на экране
@@ -115,5 +115,3 @@ def main():
 
 if __name__ == "__main__":
     sys.exit(main())
-
- 
